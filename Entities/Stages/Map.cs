@@ -5,7 +5,7 @@ namespace JewelCollector.Entities.Stages
 {
     public abstract class Map : IMap
     {
-        private ICell[,] Cells { get; set; }
+        public ICell[,]? Cells { get; set; }
 
         public Map()
         {
@@ -16,12 +16,12 @@ namespace JewelCollector.Entities.Stages
 
         public void Alocate(ICell cell, int row, int column)
         {
-            Cells[row, column] = cell;
+            Cells![row, column] = cell;
         }
 
         public void Print()
         {
-            for(int row=0; row < Cells.GetLength(0); row++)
+            for(int row=0; row < Cells!.GetLength(0); row++)
             {
                 for(int column=0; column < Cells.GetLength(1); column++)
                 {
