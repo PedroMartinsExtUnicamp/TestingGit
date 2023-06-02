@@ -5,19 +5,31 @@ namespace JewelCollector.Entities.Stages
 {
     public abstract class Map : IMap
     {
-        public void Alocate(ICell cell, int row, int column)
+        public ICell[,]? Cells { get; set; }
+
+        public Map()
         {
-            throw new NotImplementedException();
+            
         }
 
-        public void Fill()
+        public abstract void Fill();
+
+        public void Alocate(ICell cell, int row, int column)
         {
-            throw new NotImplementedException();
+            Cells![row, column] = cell;
         }
 
         public void Print()
         {
-            throw new NotImplementedException();
+            for(int row=0; row < Cells!.GetLength(0); row++)
+            {
+                for(int column=0; column < Cells.GetLength(1); column++)
+                {
+                    Cells[row, column].Print();
+                    Console.Write(' ');
+                }
+                Console.Write("\n");
+            }
         }
     }
 }
