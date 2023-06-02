@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UeZEqeOGZ7Jno4rsdFlVFjDq5BSk0534wJy65h6b/j3PtruU/zb1xkFY12MWLBOJavOHIuJPtVXTPUMZ/e4oOQ==",
+  "success": true,
+  "projectFilePath": "/home/pedro/Documents/msft2023/inf0990/FinalProject/JewelCollector/JewelCollector.csproj",
+  "expectedPackageFiles": [
+    "/home/pedro/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.14/microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
