@@ -6,7 +6,15 @@ namespace JewelCollector.Entities
     {
         public void Print()
         {
-            throw new NotImplementedException();
+            ConsoleColor backgroundDefault = Console.BackgroundColor;
+            ConsoleColor foregroundDefault = Console.ForegroundColor;
+            
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("--");
+            
+            Console.BackgroundColor = backgroundDefault;
+            Console.ForegroundColor = foregroundDefault;
         }
     }
 

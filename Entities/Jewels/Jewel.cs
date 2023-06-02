@@ -5,9 +5,6 @@ namespace JewelCollector.Entities.Jewels
 {
     public abstract class Jewel : ICell
     {
-        public void Print()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Print();
     }
 }
